@@ -25,27 +25,35 @@ async function updateVercelConfig() {
         const rewrites = [];
 
         for (const item of playgrounds) {
-            if (item.destination && item.path.startsWith('/')) {
-                const sourcePath = item.path;
-                const destPath = item.destination;
+            if (item.url) {
+                try {
+                    const itemUrl = new URL(item.url);
+                    const pathName = itemUrl.pathname; // e.g. "/image-compressor"
+                    const destUrl = item.url;
 
-                // Exact match
-                rewrites.push({
-                    source: sourcePath,
-                    destination: destPath
-                });
+                    // Ensure path starts with / and isn't just / (unless intended, but usually subapps present as paths)
+                    if (pathName && pathName !== '/') {
+                        // Exact match
+                        rewrites.push({
+                            source: pathName,
+                            destination: destUrl
+                        });
 
-                // Trailing slash
-                rewrites.push({
-                    source: `${sourcePath}/`,
-                    destination: `${destPath}/`
-                });
+                        // Trailing slash
+                        rewrites.push({
+                            source: `${pathName}/`,
+                            destination: `${destUrl}/`
+                        });
 
-                // Subpaths
-                rewrites.push({
-                    source: `${sourcePath}/:match*`,
-                    destination: `${destPath}/:match*`
-                });
+                        // Subpaths
+                        rewrites.push({
+                            source: `${pathName}/:match*`,
+                            destination: `${destUrl}/:match*`
+                        });
+                    }
+                } catch (e) {
+                    console.warn(`Invalid URL for item "${item.title}": ${item.url}`, e);
+                }
             }
         }
 

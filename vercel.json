@@ -1,3 +1,28 @@
 {
-    "rewrites": []
+    "rewrites": [
+        {
+            "source": "/image-compressor",
+            "destination": "https://image-compressor-rosy.vercel.app/image-compressor"
+        },
+        {
+            "source": "/image-compressor/",
+            "destination": "https://image-compressor-rosy.vercel.app/image-compressor/"
+        },
+        {
+            "source": "/image-compressor/:match*",
+            "destination": "https://image-compressor-rosy.vercel.app/image-compressor/:match*"
+        },
+        {
+            "source": "/precision-clock",
+            "destination": "https://precision-clock.vercel.app/precision-clock"
+        },
+        {
+            "source": "/precision-clock/",
+            "destination": "https://precision-clock.vercel.app/precision-clock/"
+        },
+        {
+            "source": "/precision-clock/:match*",
+            "destination": "https://precision-clock.vercel.app/precision-clock/:match*"
+        }
+    ]
 }
