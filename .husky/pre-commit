@@ -1,0 +1,2 @@
+pnpm run update-config
+git add vercel.json

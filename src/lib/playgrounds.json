@@ -1,0 +1,26 @@
+[
+    {
+        "id": "image-compressor",
+        "title": "Image Compressor",
+        "description": "Efficient image compression running entirely in the browser using WebAssembly.",
+        "path": "/image-compressor",
+        "tags": [
+            "Tool",
+            "Wasm",
+            "Svelte 5"
+        ],
+        "date": "2024-01-04",
+        "destination": "https://image-compressor-rosy.vercel.app/image-compressor"
+    },
+    {
+        "id": "1",
+        "title": "Examples",
+        "description": "A starting point to demonstrate the playground structure.",
+        "path": "#",
+        "tags": [
+            "Demo",
+            "UI"
+        ],
+        "date": "2024-01-01"
+    }
+]
