@@ -9,16 +9,18 @@
             "Wasm",
             "Svelte 5"
         ],
-        "date": "2024-01-04"
+        "date": "2026-01-04"
     },
     {
-        "title": "Examples",
-        "description": "プレイグラウンドの構造デモです。このフォント（DotGothic16）は日本語表示にも完全に対応しています。",
-        "url": "#",
+        "title": "精密時計",
+        "description": "精密時計のデモです。",
+        "url": "https://precision-clock.vercel.app/precision-clock",
+        "source": "https://github.com/mutsuna-jp/precision-clock.git",
         "tags": [
-            "Demo",
-            "UI"
+            "Tool",
+            "Wasm",
+            "Svelte 5"
         ],
-        "date": "2024-01-01"
+        "date": "2026-01-04"
     }
 ]
