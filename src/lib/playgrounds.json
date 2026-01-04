@@ -1,22 +1,20 @@
 [
     {
-        "id": "image-compressor",
-        "title": "Image Compressor",
-        "description": "Efficient image compression running entirely in the browser using WebAssembly.",
-        "path": "/image-compressor",
+        "title": "画像最適化ツール",
+        "description": "画像の圧縮を行い、ファイルサイズを最小限に抑えることができます。",
+        "url": "https://image-compressor-rosy.vercel.app/image-compressor",
+        "source": "https://github.com/mutsuna-jp/image-compressor.git",
         "tags": [
             "Tool",
             "Wasm",
             "Svelte 5"
         ],
-        "date": "2024-01-04",
-        "destination": "https://image-compressor-rosy.vercel.app/image-compressor"
+        "date": "2024-01-04"
     },
     {
-        "id": "1",
         "title": "Examples",
-        "description": "A starting point to demonstrate the playground structure.",
-        "path": "#",
+        "description": "プレイグラウンドの構造デモです。このフォント（DotGothic16）は日本語表示にも完全に対応しています。",
+        "url": "#",
         "tags": [
             "Demo",
             "UI"

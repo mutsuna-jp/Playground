@@ -1,16 +1,3 @@
 {
-    "rewrites": [
-        {
-            "source": "/image-compressor",
-            "destination": "https://image-compressor-rosy.vercel.app/image-compressor"
-        },
-        {
-            "source": "/image-compressor/",
-            "destination": "https://image-compressor-rosy.vercel.app/image-compressor/"
-        },
-        {
-            "source": "/image-compressor/:match*",
-            "destination": "https://image-compressor-rosy.vercel.app/image-compressor/:match*"
-        }
-    ]
+    "rewrites": []
 }
