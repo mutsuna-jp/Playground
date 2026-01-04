@@ -58,7 +58,7 @@
         role="article"
       >
         <a
-          href={item.url}
+          href={new URL(item.url).pathname}
           class="card-link-overlay"
           aria-label="View {item.title}"
         ></a>
