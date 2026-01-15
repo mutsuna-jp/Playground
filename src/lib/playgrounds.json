@@ -22,5 +22,16 @@
             "Svelte 5"
         ],
         "date": "2026-01-04"
+    },
+    {
+        "title": "タイピングゲーム",
+        "description": "シンプルなタイピングゲームです。",
+        "url": "https://typing-game.mutsuna-jp.workers.dev/typing-game",
+        "source": "https://github.com/mutsuna-jp/typing-game.git",
+        "tags": [
+            "Game",
+            "Svelte 5"
+        ],
+        "date": "2026-01-15"
     }
 ]

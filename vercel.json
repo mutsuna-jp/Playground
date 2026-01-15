@@ -23,6 +23,18 @@
         {
             "source": "/precision-clock/:match*",
             "destination": "https://precision-clock.vercel.app/precision-clock/:match*"
+        },
+        {
+            "source": "/typing-game",
+            "destination": "https://typing-game.mutsuna-jp.workers.dev/typing-game"
+        },
+        {
+            "source": "/typing-game/",
+            "destination": "https://typing-game.mutsuna-jp.workers.dev/typing-game/"
+        },
+        {
+            "source": "/typing-game/:match*",
+            "destination": "https://typing-game.mutsuna-jp.workers.dev/typing-game/:match*"
         }
     ]
 }
